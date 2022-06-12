@@ -1,0 +1,10 @@
+{
+    "name": "XMLmetadata",
+    "description": "Upload the SP metadata to Okta to autocomplete the setup for SAML apps",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [{
+        "matches": ["https://*.okta.com/admin/apps/saml-wizard/create"],
+        "js": ["background.js"]
+    }]
+}
